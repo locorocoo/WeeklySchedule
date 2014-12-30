@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        allEvents[0].append(eventsModel(myEventsTitle: "Hi", myEventsLocation: "Hi", myDescription: "Hi", myDate: Date.from(day: 5, hour: 12, minutes: 30)))
+        allEvents[0].append(eventsModel(myEventsTitle: "CS61B", myEventsLocation: "Evens 5", myDescription: "Learn java with 老头子", myDate: Date.from(day: 8, hour: 1, minutes: 0)))
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,21 +68,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         performSegueWithIdentifier("addEventsSeg", sender: self)
     }
     
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        allEvents[indexPath.section].removeAtIndex(indexPath.row)
+        tableView.reloadData()
+    }
+    
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        var empty:String = ""
+        if allEvents[section].count == 0 {
+            empty = " is Empty 😢"
+        }
         if section == 0 {
-            return "Monday"
+            return "Monday" + empty
         } else if section == 1 {
-            return "Tuesday"
+            return "Tuesday" + empty
         } else if section == 2 {
-            return "Wednesday"
+            return "Wednesday" + empty
         } else if section == 3 {
-            return "Thursday"
+            return "Thursday" + empty
         } else if section == 4 {
-            return "Friday"
+            return "Friday" + empty
         } else if section == 5 {
-            return "Saturday"
+            return "Saturday" + empty
         } else {
-            return "Sunday"
+            return "Sunday" + empty
         }
     }
     

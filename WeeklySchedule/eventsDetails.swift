@@ -40,9 +40,23 @@ class eventsDetails: UIViewController {
     }
 
     @IBAction func saveButtonPressed(sender: UIBarButtonItem) {
-        var event = eventsModel(myEventsTitle: eventsTitleTextField.text, myEventsLocation: locationTextField.text, myDescription: descriptionTextField.text, myDate: datePicker.date)
+        var events = eventsModel(myEventsTitle: eventsTitleTextField.text, myEventsLocation: locationTextField.text, myDescription: descriptionTextField.text, myDate: datePicker.date)
         
-        mainVC.allEvents[indexpaths.section][indexpaths.row] = event
+        let eventss = NSCalendar(calendarIdentifier: NSGregorianCalendar)!.components(.WeekdayCalendarUnit, fromDate: datePicker.date)
+        println(eventss.weekday)
+        
+        switch eventss.weekday {
+        case 1 :mainVC.allEvents[6].append(events)
+        case 2 :mainVC.allEvents[0].append(events)
+        case 3 :mainVC.allEvents[1].append(events)
+        case 4 :mainVC.allEvents[2].append(events)
+        case 5 :mainVC.allEvents[3].append(events)
+        case 6 :mainVC.allEvents[4].append(events)
+        case 7 :mainVC.allEvents[5].append(events)
+        default:println("error \(eventss.weekday)")
+        }
+        
+        mainVC.allEvents[indexpaths.section].removeAtIndex(indexpaths.row)
         mainVC.tableView.reloadData()
         self.navigationController?.popViewControllerAnimated(true)
 

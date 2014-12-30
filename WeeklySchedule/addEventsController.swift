@@ -37,12 +37,20 @@ class addEventsController: UIViewController {
         var events = eventsModel(myEventsTitle: eventTitle.text, myEventsLocation: location.text, myDescription: descriptionTextLabel.text, myDate: datePicker.date)
         
         let eventss = NSCalendar(calendarIdentifier: NSGregorianCalendar)!.components(.WeekdayCalendarUnit, fromDate: datePicker.date)
+        println(eventss.weekday)
+
+        switch eventss.weekday {
+        case 1 :mainVC.allEvents[6].append(events)
+        case 2 :mainVC.allEvents[0].append(events)
+        case 3 :mainVC.allEvents[1].append(events)
+        case 4 :mainVC.allEvents[2].append(events)
+        case 5 :mainVC.allEvents[3].append(events)
+        case 6 :mainVC.allEvents[4].append(events)
+        case 7 :mainVC.allEvents[5].append(events)
+        default:println("error \(eventss.weekday)")
+        }
         
-        
-        
-        
-//        mainVC.allEvents[myIndexPath.section].append(events)
-//        mainVC.tableView.reloadData()
+        mainVC.tableView.reloadData()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
