@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8701052C-351A-4683-9D6D-E3F9F23FF69E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WeeklySchedule</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6F27DE1545F9AE92A4492708587C0DDD979C19D0</key>
+		<string>https://github.com/locorocoo/WeeklySchedule.git</string>
+		<key>DC7EAA1110F96A9E19B0B05F6B38855233B5848B</key>
+		<string>https://github.com/locorocoo/WeeklySchedule.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WeeklySchedule.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6F27DE1545F9AE92A4492708587C0DDD979C19D0</key>
+		<string>../..</string>
+		<key>DC7EAA1110F96A9E19B0B05F6B38855233B5848B</key>
+		<string>../..WeeklySchedule</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/locorocoo/WeeklySchedule.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6F27DE1545F9AE92A4492708587C0DDD979C19D0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F27DE1545F9AE92A4492708587C0DDD979C19D0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WeeklySchedule</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DC7EAA1110F96A9E19B0B05F6B38855233B5848B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WeeklyScheduleWeeklySchedule</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -13,6 +13,12 @@
 		C8523B7E1A523D7500D610CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8523B7D1A523D7500D610CB /* Images.xcassets */; };
 		C8523B811A523D7500D610CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8523B7F1A523D7500D610CB /* LaunchScreen.xib */; };
 		C8523B8D1A523D7500D610CB /* WeeklyScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8523B8C1A523D7500D610CB /* WeeklyScheduleTests.swift */; };
+		C8523B971A52472C00D610CB /* UCBerkeleyCampus 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8523B961A52472C00D610CB /* UCBerkeleyCampus 2.jpg */; };
+		C8523B9B1A5271B400D610CB /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8523B9A1A5271B400D610CB /* myCell.swift */; };
+		C8523B9D1A5273E300D610CB /* eventsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8523B9C1A5273E300D610CB /* eventsDetails.swift */; };
+		C8523B9F1A52827800D610CB /* eventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8523B9E1A52827800D610CB /* eventsModel.swift */; };
+		C87830721A528E2A00409C50 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87830711A528E2A00409C50 /* DatePicker.swift */; };
+		C87830741A5298EA00409C50 /* addEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87830731A5298EA00409C50 /* addEventsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		C8523B861A523D7500D610CB /* WeeklyScheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeeklyScheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8523B8B1A523D7500D610CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8523B8C1A523D7500D610CB /* WeeklyScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyScheduleTests.swift; sourceTree = "<group>"; };
+		C8523B961A52472C00D610CB /* UCBerkeleyCampus 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UCBerkeleyCampus 2.jpg"; sourceTree = "<group>"; };
+		C8523B9A1A5271B400D610CB /* myCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		C8523B9C1A5273E300D610CB /* eventsDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventsDetails.swift; sourceTree = "<group>"; };
+		C8523B9E1A52827800D610CB /* eventsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eventsModel.swift; sourceTree = "<group>"; };
+		C87830711A528E2A00409C50 /* DatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		C87830731A5298EA00409C50 /* addEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addEventsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +91,12 @@
 			children = (
 				C8523B761A523D7500D610CB /* AppDelegate.swift */,
 				C8523B781A523D7500D610CB /* ViewController.swift */,
+				C87830711A528E2A00409C50 /* DatePicker.swift */,
+				C8523B9E1A52827800D610CB /* eventsModel.swift */,
 				C8523B7A1A523D7500D610CB /* Main.storyboard */,
+				C87830731A5298EA00409C50 /* addEventsController.swift */,
+				C8523B9C1A5273E300D610CB /* eventsDetails.swift */,
+				C8523B9A1A5271B400D610CB /* myCell.swift */,
 				C8523B7D1A523D7500D610CB /* Images.xcassets */,
 				C8523B7F1A523D7500D610CB /* LaunchScreen.xib */,
 				C8523B741A523D7500D610CB /* Supporting Files */,
@@ -90,6 +107,7 @@
 		C8523B741A523D7500D610CB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8523B961A52472C00D610CB /* UCBerkeleyCampus 2.jpg */,
 				C8523B751A523D7500D610CB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,6 +213,7 @@
 				C8523B7C1A523D7500D610CB /* Main.storyboard in Resources */,
 				C8523B811A523D7500D610CB /* LaunchScreen.xib in Resources */,
 				C8523B7E1A523D7500D610CB /* Images.xcassets in Resources */,
+				C8523B971A52472C00D610CB /* UCBerkeleyCampus 2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +232,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8523B791A523D7500D610CB /* ViewController.swift in Sources */,
+				C8523B9D1A5273E300D610CB /* eventsDetails.swift in Sources */,
+				C8523B9F1A52827800D610CB /* eventsModel.swift in Sources */,
+				C8523B9B1A5271B400D610CB /* myCell.swift in Sources */,
 				C8523B771A523D7500D610CB /* AppDelegate.swift in Sources */,
+				C87830741A5298EA00409C50 /* addEventsController.swift in Sources */,
+				C87830721A528E2A00409C50 /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +431,7 @@
 				C8523B921A523D7500D610CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8523B931A523D7500D610CB /* Build configuration list for PBXNativeTarget "WeeklyScheduleTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +440,7 @@
 				C8523B951A523D7500D610CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
